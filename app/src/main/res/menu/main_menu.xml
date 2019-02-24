@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <!--app:showAsAction="always|withText"-->
+
+    <item
+        android:id="@+id/menu_clear"
+        android:title="Clear"
+        app:showAsAction="always"
+        android:icon="@drawable/clearpage"/>
+    <item
+        android:id="@+id/menu_mark"
+        android:title="Marker"
+        app:showAsAction="always"
+        android:icon="@drawable/btn_pencil"
+        />
+    <item
+        android:id="@+id/menu_eraser"
+        android:title="Eraser"
+        app:showAsAction="always"
+        android:icon="@drawable/btn_eraser"/>
+
+</menu>

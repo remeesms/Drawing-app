@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlid"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:isScrollContainer="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <com.example.linearc.Utils.ZoomableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:id="@+id/zoom_layout"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/image"
+                android:layout_alignParentTop="true"
+                android:layout_below="@id/view_drawing_pad_holder">
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:id="@+id/view_drawing_pad_holder"
+                android:background="@android:color/transparent"
+                android:weightSum="1.0" >
+                <LinearLayout
+                    android:id="@+id/view_drawing_pad"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:background="@android:color/transparent"
+                    >
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.example.linearc.Utils.ZoomableLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#87cefa"
+
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/roundedcorners_bg"
+            android:text="SAVE"
+            android:layout_centerInParent="true"
+            android:padding="4dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_save"
+            android:layout_margin="5dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
